@@ -11,7 +11,8 @@ seq = seq2seq2_word2vec_all('P2_small_BN.h5','QA.txt') #參數說明第一個參
 
 seq.train() #訓練模型
 
-while True:
-    test_text = [input('【input Answer】 \n' )] #輸入問句
-    result = seq.run_model(test_text) #產生問句
-    print('【output question】 \n', result) #列印問句
+    while True:
+
+        test_text = [input('【input Answer】 \n' )] #輸入問句
+        result = seq.run_model(test_text) #產生問句
+        print('【output question】 \n', result) #列印問句
