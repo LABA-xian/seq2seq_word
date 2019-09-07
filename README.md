@@ -16,3 +16,7 @@ seq.train() #訓練模型
         test_text = [input('【input Answer】 \n' )] #輸入問句
         result = seq.run_model(test_text) #產生問句
         print('【output question】 \n', result) #列印問句
+
+數據格式：
+
+    今天是什麼天氣\t陰天\n
